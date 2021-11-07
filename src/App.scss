@@ -1,0 +1,120 @@
+// google font:
+// font-family: 'Yaldevi', sans-serif;
+body {
+  background-color: #000000;
+  .App {
+    text-align: center;
+    font-family: "Yaldevi", sans-serif;
+    h1 {
+      font-size: 60px;
+      font-weight: 400;
+      background-color: bisque;
+      padding: 20px 0;
+    }
+
+    .searchArea {
+      background-color: #00a59c;
+      margin: 10px 0px;
+      padding: 20px 0;
+
+      .searchBox {
+        width: 400px;
+        height: 34px;
+        margin-right: 10px;
+        text-indent: 5px;
+      }
+
+      .searchBtn {
+        width: 110px;
+        height: 35px;
+        background-color: #ffdad6;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ff9589;
+        }
+      }
+
+      .searchBox,
+      .searchBtn {
+        font-size: 24px;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+
+    h1,
+    .searchArea {
+      margin: -10px -10px;
+    }
+
+    //   show movies --------------------------
+    .allMovies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px 0;
+
+      .movieList {
+        display: flex;
+        margin: 20px 0;
+        // border: 1px solid lightgray;
+        overflow: auto;
+        border-radius: 20px;
+
+        &:nth-child(even) {
+          background-color: #fff4d1;
+        }
+
+        &:nth-child(odd) {
+          background-color: white;
+        }
+
+        img {
+          width: 280px;
+          object-fit: cover;
+          border: 1px solid lightgray;
+        }
+
+        .movieInfo {
+          width: 280px;
+          padding: 0 15px 0 5px;
+          text-align: right;
+
+          .movieDetails {
+            display: inline-block;
+            font-size: 30px;
+            margin: 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #d1d1d1;
+          }
+
+          .title {
+            font-size: 35px;
+            margin: 5px;
+            font-weight: 600;
+          }
+
+          .rating {
+            font-size: 20px;
+            font-weight: 600;
+          }
+
+          .plot {
+            font-size: 18px;
+            line-height: 25px;
+            color: #3d3d3d;
+          }
+
+          .genre {
+            background-color: rgb(0, 113, 117);
+            margin: 0 5px;
+            padding: 2.5px 5px;
+            border-radius: 5px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
